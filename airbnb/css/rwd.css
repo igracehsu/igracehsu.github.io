@@ -1,0 +1,845 @@
+@charset "utf-8";
+
+
+body {
+	margin: 0;
+	font-family: 'Abril Fatface', cursive, 微軟正黑體;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: gray;
+}
+a {
+	display: block;
+}
+@media screen and (max-width: 1024px) {
+     
+#nav_top {
+	width: 100%;
+	height: 62px;
+	background-color: white;
+	position: fixed;
+	z-index: 999;
+}
+
+#nav_phone {
+	display: none;
+	width: 100%;
+	height: 62px;
+	background-color: pink;
+	position: fixed;
+}
+
+#logo {
+	width: 138px;
+	height: 61px;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+
+#where {
+	height: 61px;
+	width: auto;
+	padding: 5px 15px;
+	float: left;
+}
+#where input[type="text"] {
+	 background:white; 
+	 border:0 none;
+	 font-size: 1em;
+}
+#right {
+	display: none;
+	float: right;
+	width: 331px;
+}
+#right a:link, #right a:visited,{
+	text-decoration: none;
+	color: gray;
+}
+#host {
+	width: 102px;
+	height: 21px;
+	border-right: 0.5px solid #ccc;
+	float: left;
+	padding: 20px 10px;
+}
+
+#host span {
+	width: 83px;
+	height: 42px;
+	padding: 8px;
+	border-radius: 5px;
+	border: 2px solid #CCC;
+}
+#help {
+	width: 54px;
+	height: 21px;
+	border-right: 0.5px solid #ccc;
+	padding: 20px 10px;
+	float: left;
+}
+#signup {
+	width: 46px;
+	height: 21px;
+	border-right: 0.5px solid #ccc;
+	padding: 20px 10px;
+	float: left;
+}
+
+#login {
+	width: 46px;
+	height: 61px;
+	padding: 20px 10px;
+	float: left;
+}
+#ad {
+	width: 100%;
+	height: 399px;
+	background-image: url('../images/1.jpg');
+	background-size: cover;
+	padding-top: 201px;
+	position: relative;
+}
+
+video#bgvid {
+	display: none;
+	width: 100%;
+	float: left;
+	position: absolute;
+	top: 0px;
+	z-index: -999;
+}
+#slogan {
+	width: 100%;
+	height: 44px;
+	margin-bottom: 22px;
+	color: white;
+	font-weight: bold;
+	font-family: ;
+	font-size:3.5em;
+}
+
+#sloganText {
+	width: 100%;
+	height: 21px;
+	margin-bottom: 22px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+}
+#btn{
+	width: 172px;
+	height: 21px;
+	background-color: rgba(255,255,255,0.5);
+    border-style: none;
+    font-size: 1.1em;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#btn a:link, #btn a:visited {
+	text-decoration: none;
+	color: white;
+}
+#btn:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+#booking {
+	width: 100%;
+	height: 36px;
+	position: absolute;
+	bottom:46px;
+}
+
+#search {
+	width: 100%;
+	height: 36px;
+	margin-left:auto;
+}
+form {
+	 width:100%;
+	 height: 36px;
+	 background:white; 
+}
+input[type=text]{
+	width: 80%;
+	font-size: 1em;
+	height: 26px;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #333;
+}
+input[type=date]{
+	display: none;
+	font-size: 1em;
+	width: 150px;
+	height: 36px;
+	float: left;
+	padding: 5px;
+	border: 0.5px gray solid;
+	color: #333;
+}
+
+select {
+	display: none;
+	font-size: 1em;
+	height: 46px;
+	width: 123px;
+	float: left;
+	padding: 5px;
+	border: 0.5px gray solid;
+	color: #333;
+}
+input[type=submit] {
+    height: 40px;
+    width: 19%;
+    float: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background:#ff7e82; 
+    border: none;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+ }
+#content {
+	width: 100%;
+	height: 1200px;
+	padding-top: 51px;
+	background-color: white;
+
+}
+#locationTitle{
+	width: 100%;
+	height: 32px;
+	margin-bottom: 11px;
+	font-size: 2em;
+	color: #333;
+	font-family: 微軟正黑體;
+	font-weight: bolder;
+}
+
+#locationText{
+	width: 100%;
+	height: 16px;
+	margin-bottom: 38px;
+	font-size: 1em;
+	color: #333;
+	font-family: 微軟正黑體;
+}
+
+#locall{
+	width: 100%;
+	height: 1032px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#locall a:link, #locall a:visited{
+	color: white;
+	text-decoration: none;
+
+}
+#locA{
+	width: 100%;
+	height: 194px;
+	padding-top: 150px;
+	background-color: pink;
+	background-image: url('../images/seoul.jpg');
+	background-size: cover;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+	display: block;
+}
+#locA:hover, #locB:hover, #locC:hover {
+	opacity: 0.8;
+}
+#locB{
+	width: 100%;
+	height: 194px;
+	padding-top: 150px;
+	background-color: pink;
+	background-image: url('../images/osaka.jpg');
+	background-size: cover;
+    color: white;
+	font-size: 3em;
+	text-align: center;
+
+}
+#locC{
+	width: 100%;
+	height: 194px;
+	padding-top: 150px;
+	margin-left: auto;
+	background-color: pink;
+	background-image: url('../images/kyoto.jpg');
+	background-size: cover;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+#btn2{
+	width: 98%;
+	height: 20px;
+	background-color: white;
+	padding: 10px 0px;
+	border: 1px gray solid;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1199px){
+
+#nav_top {
+	width: 100%;
+	height: 62px;
+	background-color: white;
+	position: fixed;
+	z-index: 999;
+}
+
+#nav_phone {
+	display: none;
+}
+
+#logo {
+	width: 138px;
+	height: 61px;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+
+#where {
+	height: 61px;
+	width: auto;
+	padding: 5px 15px;
+	float: left;
+}
+#where input[type="text"] {
+	 background:white; 
+	 border:0 none;
+	 font-size: 1em;
+}
+#right {
+	float: right;
+	width: 331px;
+}
+#right a:link, #right a:visited,{
+	text-decoration: none;
+	color: gray;
+}
+#host {
+	width: 102px;
+	height: 21px;
+	border-right: 0.5px solid #ccc;
+	float: left;
+	padding: 20px 10px;
+}
+
+#host span {
+	width: 83px;
+	height: 42px;
+	padding: 8px;
+	border-radius: 5px;
+	border: 2px solid #CCC;
+}
+#help {
+	width: 54px;
+	height: 21px;
+	border-right: 0.5px solid #ccc;
+	padding: 20px 10px;
+	float: left;
+}
+#signup {
+	width: 46px;
+	height: 21px;
+	border-right: 0.5px solid #ccc;
+	padding: 20px 10px;
+	float: left;
+}
+
+#login {
+	width: 46px;
+	height: 61px;
+	padding: 20px 10px;
+	float: left;
+}
+#ad {
+	width: 100%;
+	height: 399px;
+	padding-top: 201px;
+	position: relative;
+}
+
+video#bgvid {
+	width: 100%;
+	float: left;
+	position: absolute;
+	top: 0px;
+	z-index: -999;
+}
+#slogan {
+	width: 100%;
+	height: 44px;
+	margin-bottom: 22px;
+	color: white;
+	font-weight: bold;
+	font-family: ;
+	font-size:3.5em;
+}
+
+#sloganText {
+	width: 100%;
+	height: 21px;
+	margin-bottom: 22px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+}
+#btn{
+	width: 172px;
+	height: 21px;
+	background-color: rgba(255,255,255,0.5);
+    border-style: none;
+    font-size: 1.1em;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#btn a:link, #btn a:visited {
+	text-decoration: none;
+	color: white;
+}
+#btn:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+#booking {
+	width: 100%;
+	height: 46px;
+	position: absolute;
+	bottom: 120px;
+}
+
+#search {
+	width: 100%;
+	height: 46px;
+	margin-left:auto;
+}
+form {
+	 width:740px;
+	 height: 36px;
+	 background:white; 
+	 line-height: 36px;
+}
+input[type=text]{
+	width: 160px;
+	font-size: 1em;
+	height: 36px;
+	float: left;
+	padding: 5px;
+	border: 0.5px gray solid;
+	color: #333;
+}
+input[type=date]{
+	font-size: 1em;
+	width: 150px;
+	height: 36px;
+	float: left;
+	padding: 5px;
+	border: 0.5px gray solid;
+	color: #333;
+}
+
+select {
+	font-size: 1em;
+	height: 46px;
+	width: 123px;
+	float: left;
+	padding: 5px;
+	border: 0.5px gray solid;
+	color: #333;
+}
+input[type=submit] {
+    height: 46px;
+    width: 120px;
+    float: right;
+    padding:15px; 
+    background:#ff7e82; 
+    border:0 none;
+    font-size: 1em;
+    color: white;
+ }
+#content {
+	width: 100%;
+	height: 700px;
+	padding-top: 51px;
+	background-color: white;
+
+}
+#locationTitle{
+	width: 100%;
+	height: 32px;
+	margin-bottom: 11px;
+	font-size: 2em;
+	color: #333;
+	font-family: 微軟正黑體;
+	font-weight: bolder;
+}
+
+#locationText{
+	width: 100%;
+	height: 16px;
+	margin-bottom: 38px;
+	font-size: 1em;
+	color: #333;
+	font-family: 微軟正黑體;
+}
+
+#locall{
+	width: 679px;
+	height: 760px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#locall a:link, #locall a:visited{
+	color: white;
+	text-decoration: none;
+
+}
+#locA{
+	width: 679px;
+	height: 194px;
+	padding-top: 150px;
+	background-color: pink;
+	background-image: url('../images/seoul.jpg');
+	background-size: cover;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+	display: block;
+	margin-bottom: 23px;
+}
+#locA:hover, #locB:hover, #locC:hover {
+	opacity: 0.8;
+}
+#locB{
+	width: 328px;
+	height: 194px;
+	float: left;
+	padding-top: 150px;
+	margin-right: 23px;
+	margin-left: auto;
+	background-color: pink;
+	background-image: url('../images/osaka.jpg');
+	background-size: cover;
+    color: white;
+	font-size: 3em;
+	text-align: center;
+
+}
+#locC{
+	width: 328px;
+	height: 194px;
+	padding-top: 150px;
+	float: left;
+	margin-left: auto;
+	background-color: pink;
+	background-image: url('../images/kyoto.jpg');
+	background-size: cover;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+#btn2{
+	width: 328px;
+	height: 20px;
+	background-color: white;
+	padding: 10px 0px;
+	border: 1px gray solid;
+	border-radius: 5px;
+}
+}
+
+@media screen and (min-width: 1200px) {
+#nav_top {
+	width: 100%;
+	height: 62px;
+	background-color: white;
+	position: fixed;
+	z-index: 999;
+}
+#nav_phone {
+	display: none;
+}
+
+#logo {
+	width: 138px;
+	height: 61px;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+
+#where {
+	height: 61px;
+	width: auto;
+	padding: 5px 15px;
+	float: left;
+}
+#where input[type="text"] {
+	 background:white; 
+	 border:0 none;
+	 font-size: 1em;
+}
+#right {
+	float: right;
+	width: 331px;
+}
+#right a:link, #right a:visited,{
+	text-decoration: none;
+	color: gray;
+}
+#host {
+	width: 102px;
+	height: 21px;
+	border-right: 0.5px solid #ccc;
+	float: left;
+	padding: 20px 10px;
+}
+
+#host span {
+	width: 83px;
+	height: 42px;
+	padding: 8px;
+	border-radius: 5px;
+	border: 2px solid #CCC;
+}
+#help {
+	width: 54px;
+	height: 21px;
+	border-right: 0.5px solid #ccc;
+	padding: 20px 10px;
+	float: left;
+}
+#signup {
+	width: 46px;
+	height: 21px;
+	border-right: 0.5px solid #ccc;
+	padding: 20px 10px;
+	float: left;
+}
+
+#login {
+	width: 46px;
+	height: 61px;
+	padding: 20px 10px;
+	float: left;
+}
+#ad {
+	width: 100%;
+	height: 399px;
+	padding-top: 201px;
+	position: relative;
+}
+
+video#bgvid {
+	width: 100%;
+	float: left;
+	position: absolute;
+	top: 0px;
+	z-index: -999;
+}
+#slogan {
+	width: 100%;
+	height: 44px;
+	margin-bottom: 22px;
+	color: white;
+	font-weight: bold;
+	font-family: ;
+	font-size:3.5em;
+}
+
+#sloganText {
+	width: 100%;
+	height: 21px;
+	margin-bottom: 22px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+}
+#btn{
+	width: 172px;
+	height: 21px;
+	background-color: rgba(255,255,255,0.5);
+    border-style: none;
+    font-size: 1.1em;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#btn a:link, #btn a:visited {
+	text-decoration: none;
+	color: white;
+}
+#btn:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+#booking {
+	width: 100%;
+	height: 102px;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: 0;
+}
+
+#search {
+	width: 1056px;
+	height: 46px;
+	background-color: #fff;
+	margin: 30px auto;
+}
+form {
+	 width:1056px;
+	 height: 36px;
+	 background:white; 
+	 line-height: 36px;
+}
+input[type=text]{
+	font-size: 1.5em;
+	height: 36px;
+	float: left;
+	padding: 5px;
+	border: none;
+	color: #333;
+}
+input[type=date]{
+	font-size: 1.5em;
+	height: 36px;
+	float: left;
+	padding: 5px;
+	border: none;
+	color: #333;
+}
+
+select {
+	font-size: 1.5em;
+	height: 36px;
+	float: left;
+	padding: 5px;
+	border: none;
+	color: #333;
+}
+input[type=submit] {
+    height: 46px;
+    width: 120px;
+    float: right;
+    padding:15px; 
+    background:#ff7e82; 
+    border:0 none;
+    font-size: 1em;
+    color: white;
+ }
+#content {
+	width: 100%;
+	height: 700px;
+	padding-top: 51px;
+	background-color: white;
+
+}
+#locationTitle{
+	width: 100%;
+	height: 32px;
+	margin-bottom: 11px;
+	font-size: 2em;
+	color: #333;
+	font-family: 微軟正黑體;
+	font-weight: bolder;
+}
+
+#locationText{
+	width: 100%;
+	height: 16px;
+	margin-bottom: 38px;
+	font-size: 1em;
+	color: #333;
+	font-family: 微軟正黑體;
+}
+
+#locall{
+	width: 1030px;
+	height: 344px;
+	margin-bottom: 50px;
+}
+
+#locall a:link, #locall a:visited{
+	color: white;
+	text-decoration: none;
+
+}
+#locA{
+	width: 328px;
+	height: 194px;
+	float: left;
+	margin-right: 23px;
+	padding-top: 150px;
+	background-color: pink;
+	background-image: url('../images/seoul.jpg');
+	background-size: cover;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+	display: block;
+}
+#locA:hover, #locB:hover, #locC:hover {
+	opacity: 0.8;
+}
+#locB{
+	width: 328px;
+	height: 194px;
+	float: left;
+	padding-top: 150px;
+	margin-right: 23px;
+	background-color: pink;
+	background-image: url('../images/osaka.jpg');
+	background-size: cover;
+    color: white;
+	font-size: 3em;
+	text-align: center;
+
+}
+#locC{
+	width: 328px;
+	height: 194px;
+	padding-top: 150px;
+	float: left;
+	background-color: pink;
+	background-image: url('../images/kyoto.jpg');
+	background-size: cover;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+#btn2{
+	width: 328px;
+	height: 20px;
+	background-color: white;
+	padding: 10px 0px;
+	border: 1px gray solid;
+	border-radius: 5px;
+}     
+
+}
