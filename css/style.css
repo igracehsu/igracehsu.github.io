@@ -1,0 +1,804 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+nav {
+                display: block;
+                float: left;
+                width: 100%;
+                z-index: 999;
+              
+            }
+.nav ul{
+                margin: 0;
+                padding: 0;
+            }
+            .nav li{
+                position: relative;
+                float: left;
+                list-style: none;
+                font-size: 1.5em;
+                margin-left: 1em;
+                color: white;
+                
+            }
+            .nav li a {
+                display: block;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.3);       
+                color: #FFF;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            .nav li:hover {
+                border-bottom: 2px solid #C52B15;
+	            color: #C52B15;
+            }
+            .nav li ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+            }
+            .nav li:hover ul {
+                display: block;
+                right: 0;
+                left: 0;
+                top: 100%;
+            }
+            .toggle { 
+                display: none;
+            }
+            .arrow-bottom {
+                position: absolute;
+                top: 25px;
+                right: 13px;
+                margin-left: 5px;
+                border-top: 4px solid #FFF;
+                border-right: 4px solid transparent;    
+                border-left: 4px solid transparent;        
+                width: 1px;
+                height: 1px;
+            }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,  body {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+  	height: 100%;
+  	overflow: hidden;
+  	background-color: #ccc;
+	font-family: ‘cwTeXYen’, sans-serif;
+	
+}
+
+ .icon-star {
+ 	color: gold;
+ }
+
+ .icon-desktop {
+	color:#4B7F8D;
+	padding-right: 20px;
+ } 
+
+ .icon-eye-open{
+	color: #7884B6;
+	padding-right: 20px;
+ }
+
+ .icon-pencil {
+ 	color: #A76BA2;
+ 	padding-right: 20px;
+ }
+  #navbar {
+      width: 100%;
+      margin-bottom: 0;
+      background-color: rgba(255, 255, 255, 0.3); 
+      height: 60px;
+      float: left;
+      z-index: 999;
+      position: relative;
+  }  	
+
+#logo{
+	padding: 5px 10px 5px 10px;
+	float: left;
+	position: absolute;
+	top: 0;
+}
+
+
+.title {
+	color: white;
+	font-family: ‘cwTeXYen’, impact, sans-serif;
+	padding-bottom: 25px;
+	font-size: 2em;
+}
+
+.title_contact {
+	color: white;
+	font-family: ‘cwTeXYen’, impact, sans-serif;
+	padding-bottom: 3%;
+	font-size: 2em;
+}
+
+
+form {
+	font-size: 1.2em;
+	width: 80%;
+	height: 65%;
+	margin: 0 auto;
+	text-align: left;
+	line-height: 1.5em;
+}
+label{
+	width: 40%;
+	color: white;
+	text-align: left;
+}
+
+input {
+	width: 60%;
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+    color: white;
+    text-align: left;
+    border-bottom: 1px solid white;
+}
+
+textarea {
+	width: 100%;
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+select {
+	width: 100%;
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: left;
+}
+
+option {
+	background-color: rgba(255, 255, 255, 0);
+	color: gray;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+input[type="submit"]{
+	font-size: 1.2em;
+	width: 120px;
+	padding:5px; 
+ 	border:0 none;
+    background-color:#4B7F8D;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    float: right;
+}
+
+
+#home {
+	width: 100%;
+	height: 100%;
+	background-color: #E27D8C;
+}
+
+#home-top {
+	width: 100%;
+	height: 18%;
+}
+
+#home-content {
+	width: 100%;
+	height: 57%;
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+	position: relative;
+}
+
+#home_logo {
+	float: left;
+	width: 15%;
+	margin-left: 33%;
+	margin-right: 5%;
+	padding-top: 4%;
+}
+
+
+#home_services {
+	float: left;
+	width: 20%;
+	padding-top: 12%;
+	font-family: ‘cwTeXYen’, impact, sans-serif;
+	font-size: 2em;
+	
+}
+
+#whoweare {
+	height: 23%;
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: impact;
+	padding-top: 2%;
+}
+#about {
+	width: 100%;
+	height: 100vh;
+	background-color: #F0AB6C;
+	text-align: center;
+	padding-top: 10vh;
+	box-sizing: border-box;
+}
+
+#about_text {
+	width: 40%;
+	margin-left: 3%;
+	padding: 20px;
+	font-size: 1.2em;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	color: white;
+	text-align: left;
+	float: left;
+}
+
+#about_img {
+	width: 48%;
+	margin-right: 3%;
+	float: right;
+}
+#services {
+	width: 100%;
+	height: 100%;
+	background-color: #7884B6;
+	text-align: center;
+	padding-top: 10vh;
+	box-sizing: border-box;
+}
+
+#serv01, #serv02, #serv03{
+	width: 29%;
+	height: 60%;
+	float: left;
+	border-radius: 10px;
+	margin-left: 2%;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 1%;
+	font-size: 1.3em;
+	color: white;
+}
+
+
+.ser_img {
+	margin: 0 auto;
+
+}
+
+.ser_text {
+	text-align: center;
+	padding-left: 20px;
+	
+}
+#cases {
+	width: 100%;
+	height: 100%;
+	background-color: #A76BA2;
+	text-align: center;
+	padding-top: 10vh;
+	box-sizing: border-box;
+}
+
+#contact {
+	width: 100%;
+	height: 100vh;
+	background-color: #64A9BC;
+	text-align: center;
+	padding-top: 10vh;
+	box-sizing: border-box;
+}
+
+#contact_text {
+	text-align: left;
+	color: white;
+	font-size: 12pt;
+	padding-left: 20%;
+	padding-bottom: 30px;
+}
+#footer {
+	width: 100%;
+	height: 80px;
+	line-height: 1.5em;
+	background-color: rgba(0, 0, 0, 0.3);
+	float: left;
+	text-align: center;
+	font-size: 1.3em;
+	color: white;
+	padding-top: 15px;
+	position: absolute;
+	bottom: 0px;
+}
+
+
+.flex-caption {
+  font-family: ‘cwTeXYen’, sans-serif;
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.3);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+/*Vertical Slider CSS*/
+#container,  .sections,  .section {
+  position: relative;
+
+  height: 100%;
+}
+
+.section {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#container,  .sections,  .section {
+  position: relative;
+  height: 100%;
+}
+
+.section {
+   background-position: 50% 50%;
+}
+
+.pages {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  list-style: none;
+}
+
+.pages li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 15px 10px 0 7px;
+}
+
+.pages li.active {
+  margin-left: 0;
+  width: 14px;
+  height: 14px;
+  border: 4px solid #FFFFFF;
+  background: none;
+}
+
+@media screen and (max-width: 480px) {
+
+#menubtn {
+	float: right;
+	width: 25px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.nav {
+        display: none;
+    }
+.nav ul {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 60px;
+	text-align: center;
+}
+.toggle {
+        display: inline-block;
+        position: absolute;
+	   top: 10px;
+	   right: 10px;
+}
+.nav li{
+        float: none;
+        width: 100%;
+    }
+.nav li:hover ul {
+        position: relative;
+        display: block;
+     }
+.nav li:hover ul li{
+        background: transparent;
+    }
+.nav li:hover ul li a{
+        padding-left: 30px;
+    }
+    .arrow-bottom {
+        top: 20px;
+    }
+
+
+
+.title {
+	font-size: 1.4em;
+}
+.title_contact {
+	font-size: 1.4em;
+}
+
+#home-top {
+	width: 100%;
+	height: 15%;
+	background-color: #E27D8C;
+}
+#home-content{
+	width: 100%;
+	height: 75%;
+}
+
+#home_logo{
+	width: 100%;
+	margin: 0 20%;
+	
+}
+#home_services {
+	width: 100%;
+	font-size: 1em;
+	margin: 0 35%;
+
+}
+#whoweare {
+	height: 8%;
+	color: white;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: impact;
+}
+
+#about_text {
+	width: 78%;
+	margin-left: 2%;
+	margin-right: 1%;
+	font-size: 1em;
+
+}
+#about_img {
+	display: none;
+}
+
+#services {
+	width: 100%;
+	font-size: 1em;
+}
+#services h2 {
+	font-size: 1.1em;
+}
+.ser_img {
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+.ser_img img{
+	width: 70%;
+}
+.ser_text {
+	width: 70%;
+	float: left;
+	text-align: left;
+}
+
+#serv01{
+	width: 83%;
+	height: 24%;
+
+	margin-bottom: 3%;
+}
+#serv02{
+	width: 83%;
+	height: 24%;
+	margin-left: 4%;
+	margin-bottom: 3%;
+}
+#serv03{
+	width: 83%;
+	height: 24%;
+}
+
+.flex-caption {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+
+#contact_text {
+  padding-left: 2%;
+  font-size: 0.8em;
+}
+#footer {
+	font-size:0.9em;
+}
+
+}
+
+     
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+#menubtn {
+	float: right;
+	width: 25px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.nav {
+        display: none;
+    }
+.nav ul {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 60px;
+	text-align: center;
+}
+.toggle {
+        display: inline-block;
+        position: absolute;
+	   top: 10px;
+	   right: 10px;
+}
+.nav li{
+        float: none;
+        
+    }
+.nav li:hover ul {
+        position: relative;
+        display: block;
+     }
+.nav li:hover ul li{
+        background: transparent;
+    }
+.nav li:hover ul li a{
+        padding-left: 30px;
+    }
+    .arrow-bottom {
+        top: 20px;
+    }
+
+
+
+.title {
+	font-size: 1.4em;
+}
+.title_contact {
+	font-size: 1.4em;
+}
+
+
+
+#home-top {
+	width: 100%;
+	height: 15%;
+	background-color: #E27D8C;
+}
+
+#home-top {
+	width: 100%;
+	height: 15%;
+	background-color: #E27D8C;
+}
+#home_logo {
+	float: left;
+	width: 270px;
+	margin-left: 10%;
+	margin-right: 1%;
+	padding-top: 4%;
+	box-sizing: border-box;
+}
+#home_services {
+	float: left;
+	width: 31%;
+	padding-top: 18%;
+	font-family: ‘cwTeXYen’, impact, sans-serif;
+	font-size:1.5em;
+	
+}
+
+#whoweare {
+	height: 10%;
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: impact;
+	padding-top: 2%;
+}
+#about_text {
+	width: 90%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 2%;
+
+}
+#about_img {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#services {
+	width: 100%;
+}
+.ser_img {
+	width: 40%;
+	float: left;
+}
+.ser_img img{
+	width: 70%;
+}
+.ser_text {
+	width: 60%;
+	float: left;
+	font-size: 1.2em;
+}
+
+#serv01{
+	width: 80%;
+	height: 24%;
+	margin-bottom: 1%;
+}
+#serv02{
+	width: 80%;
+	height: 24%;
+	float: right;
+	margin-right: 1%;
+	margin-bottom: 1%;
+}#serv03{
+	width: 80%;
+	height: 24%;
+}
+
+#contact_text {
+  padding-left: 5%;
+}
+#footer {
+	font-size: 1em;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px){
+
+#navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.nav ul{
+	margin-left: 300px;
+	margin-top: 15px;
+}
+.nav li{
+                position: relative;
+                float: left;
+                list-style: none;
+                font-size: 1.5em;
+                margin-left: 1em;
+                color: white;
+                
+            }
+            .nav li a {
+                display: block;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0);       
+                color: #FFF;
+                text-decoration: none;
+                text-align: center;
+                }
+
+#home-top {
+	width: 100%;
+	height: 15%;
+	background-color: #E27D8C;
+}
+
+#home-top {
+	width: 100%;
+	height: 15%;
+	background-color: #E27D8C;
+}
+#home_logo {
+	float: left;
+	width: 270px;
+	margin-left: 18%;
+	margin-right: 2%;
+	padding-top: 4%;
+}
+#home_services {
+	float: left;
+	width: 30%;
+	padding-top: 18%;
+	font-family: ‘cwTeXYen’, impact, sans-serif;
+	font-size:1.6em;
+	
+}
+
+#whoweare {
+	height: 10%;
+	color: white;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: impact;
+	padding-top: 2%;
+}
+
+
+#contact_text {
+  padding-left: 5%;
+}
+#footer {
+	font-size: 1em;
+}
+
+}
+
+
+@media screen and (min-width: 1200px) {
+     body{
+     	width: 1200px;
+     	margin: 0 auto;
+     	box-shadow: 5px 5px 5px gray;
+     }
+     
+#navbar {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+}
+   .nav ul{
+	margin-left: 300px;
+	margin-top: 15px;
+}
+.nav li{
+                position: relative;
+                float: left;
+                list-style: none;
+                font-size: 1.5em;
+                margin-left: 1em;
+                color: white;
+                
+            }
+            .nav li a {
+                display: block;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0);       
+                color: #FFF;
+                text-decoration: none;
+                text-align: center;
+                }
+}
