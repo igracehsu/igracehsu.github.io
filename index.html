@@ -145,22 +145,37 @@
             </div>
             <div>
               <form action="">
-                <div>
-                  <label>姓名:<input type="text" name="姓名" value=""></label><br>
-                  <label>E-mail:<input type="text" name="" value=""></label><br>
-                  <label>聯絡電話:<input type="text" name="" value=""></label><br>
-                  <label>諮詢項目:
-                    <select name="services">
+               
+                <table width="100%">
+                <tr>
+                  <td width="100px"><label>姓名:</label></td>
+                  <td class="tdwidth"><input type="text" name="姓名" value=""></td>
+                </tr>
+                <tr>
+                  <td><label>E-mail:</label></td>
+                  <td class="tdwidth"><input type="text" name="" value=""></td>
+                </tr>
+                <tr>
+                  <td><label>聯絡電話:</label></td>
+                  <td class="tdwidth"><input type="text" name="" value=""></td>
+                </tr>
+                <tr>
+                <td><label>諮詢項目: </label></td>
+                <td class="tdwidth"> <select name="services">
                       <option value="website">網站設計</option>
                       <option value="design">視覺設計</option>
                       <option value="planning">行銷企劃</option></select>
-                  </label><br>
-                  
-                  <label>諮詢內容:<textarea name="message" rows="4"></textarea>
-                  </label>
-                
-                  <input type="submit" value="送出">
-                                
+                </td>
+                </tr>
+                <tr>
+                <td><label>諮詢內容:</label></td>
+                <td class="tdwidth"><textarea name="message" rows="4"></textarea></td>             
+                </tr>
+                <tr>
+                   <td colspan="2" style="position: center;"><input type="submit" value="送出"></td>
+                </tr>
+                 
+                <table>                
               </form>
             </div>
             <div id="footer">
