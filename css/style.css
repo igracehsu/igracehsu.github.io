@@ -545,6 +545,15 @@ input[type="submit"]{
   padding-left: 2%;
   font-size: 0.8em;
 }
+
+.tdwidth1 {
+	width: 100px;
+}
+
+.tdwidth {
+	width: 80%;
+}
+
 #footer {
 	font-size:0.9em;
 }
