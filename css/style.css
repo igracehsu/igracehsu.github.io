@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url('http://fonts.googleapis.com/earlyaccess/cwtexyen.css');
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
 nav {
                 display: block;
@@ -64,6 +64,7 @@ nav {
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'cwTeXYen', sans-serif;
 }
 
 html,  body {
@@ -73,8 +74,15 @@ html,  body {
   	height: 100%;
   	overflow: hidden;
   	background-color: #ccc;
-	font-family: ‘cwTeXYen’, sans-serif;
 	
+}
+
+.tdwidth1 {
+	width: 20%;
+}
+
+.tdwidth {
+	width: 80%;
 }
 
  .icon-star {
@@ -115,14 +123,14 @@ html,  body {
 
 .title {
 	color: white;
-	font-family: ‘cwTeXYen’, impact, sans-serif;
+	font-family: 'cwTeXYen', sans-serif;
 	padding-bottom: 25px;
 	font-size: 2em;
 }
 
 .title_contact {
 	color: white;
-	font-family: ‘cwTeXYen’, impact, sans-serif;
+	font-family: 'cwTeXYen', sans-serif;
 	padding-bottom: 3%;
 	font-size: 2em;
 }
@@ -130,20 +138,20 @@ html,  body {
 
 form {
 	font-size: 1.2em;
-	width: 80%;
+	width: 85%;
 	height: 65%;
 	margin: 0 auto;
 	text-align: left;
 	line-height: 1.5em;
 }
 label{
-	width: 40%;
 	color: white;
+	width: 80px;
 	text-align: left;
 }
 
 input {
-	width: 60%;
+	width: 100%;
 	border: none;
 	background-color: rgba(255, 255, 255, 0);
     color: white;
@@ -328,6 +336,7 @@ input[type="submit"]{
 	padding-top: 15px;
 	position: absolute;
 	bottom: 0px;
+	left: 0px;
 }
 
 
@@ -463,8 +472,10 @@ input[type="submit"]{
 }
 #home_services {
 	width: 100%;
-	font-size: 1em;
+	font-size: 1.6em;
 	margin: 0 35%;
+	font-family: ‘cwTeXYen’, sans-serif;
+
 
 }
 #whoweare {
@@ -762,6 +773,13 @@ input[type="submit"]{
 #footer {
 	font-size: 1em;
 }
+.tdwidth1 {
+	width: 120px;
+}
+
+.tdwidth {
+	width: 88%;
+}
 
 }
 
@@ -801,4 +819,11 @@ input[type="submit"]{
                 text-decoration: none;
                 text-align: center;
                 }
+.tdwidth1 {
+	width: 100px;
+}
+
+.tdwidth {
+	width: 91%;
+}
 }
