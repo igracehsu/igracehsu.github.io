@@ -558,6 +558,9 @@ input[type="submit"]{
   font-size: 0.8em;
 }
 
+form {
+	font-size: 1.1em;
+}
 .tdwidth1 {
 	width: 100px;
 }
